@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Honda Accord</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div id="imgHolder" class="imgHolder">
+		<img src="img/blue.png" alt="Car">
+		<div class="model-summary">
+			<div class="model-name">Honda Accord</div>
+			<div class="model-specs" id="modelSpecs"></div>
+			<div class="model-price" id="modelPrice"></div>
+			<div class="model-price" id="modelPriceUAH"></div>
+			<div class="button">Buy</div>
+		</div>
+	</div>
+
+	<form id="autoForm">
+		<h2>Tune it for you</h2>
+
+		<div class="row">
+
+			<!-- col-1-of-3 -->
+			<div class="col-1-of-3">
+				<h4>Motor</h4>
+				<div class="form-block">
+					<input type="radio" name="engine" id="engine1400" value="624900" checked >
+					<label for="engine1400">1.4 l (100 h.p.)</label>
+				</div>
+
+				<div class="form-block">
+					<input type="radio" name="engine" id="engine1600" value="749900" >
+					<label for="engine1600">1.6 l (123 h.p.)</label>
+				</div>
+
+			 </div>
+
+			 <!-- col-1-of-3 -->
+			<div class="col-1-of-3">
+				<h4>Transmission</h4>
+				<div class="form-block">
+					<input type="radio" name="transmission" id="transmission6MT" value="0" checked>
+					<label for="transmission6MT">Manual, 6 steps (6 MT)</label>
+				</div>
+
+				<div class="form-block">
+					<input type="radio" name="transmission" id="transmission6AT" value="125000" >
+					<label for="transmission6AT">Automatic, 6 steps (6AT)</label>
+				</div>
+
+			 </div>
+
+			 <!-- col-1-of-3 -->
+			<div class="col-1-of-3">
+				<h4>Package (additional options)</h4>
+				<div class="form-block">
+					<input type="radio" name="package" id="packageActive" value="0" checked >
+					<label for="packageActive">Manual, 6 steps (6 MT)</label>
+				</div>
+
+				<div class="form-block">
+					<input type="radio" name="package" id="packageActivePlus" value="85000" >
+					<label for="packageActivePlus">Active Plus (conditioner)</label>
+				</div>
+
+				<div class="form-block">
+					<input type="radio" name="package" id="packageComfort" value="13000" >
+					<label for="packageComfort">Comfort (climate control)</label>
+				</div>
+
+			 </div>
+
+			  <!-- col-1-of-3 -->
+			<div class="col-1-of-3">
+				 <h4>Color</h4>
+				 	<div class="form-block">
+				 		<div id="colorsSelector" class="colorsSelector">
+				 			<div class="colorItem colorBlue" data-img-path= "img/blue.png"></div>
+				 			<div class="colorItem colorDarkblue" data-img-path= "img/darkblue.png"></div>
+				 			<div class="colorItem colorBlack" data-img-path= "img/black.png"></div>
+				 			<div class="colorItem colorWhite" data-img-path= "img/white.png"></div>
+				 			<div class="colorItem colorGrey" data-img-path="img/grey.png"></div>
+				 			<div class="colorItem colorSerebro" data-img-path= "img/serebro.png"></div>
+				 			<div class="colorItem colorRed" data-img-path= "img/red.png"></div>
+				 		</div>
+				 	</div>
+			 </div>
+
+		</div>
+	</form>
+
+	<script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+
+</body>
+</html>
+
